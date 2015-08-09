@@ -6,7 +6,6 @@ var NgApp = angular.module('NgApp', []);
 NgApp.controller('PersonalControl', function ($scope) {
 $scope.BlockList = JSON.parse(localStorage.getItem('blockLink'));
     $scope.add = function () {
-        console.log($scope.BlockList)
         $scope.BlockList.push('')
     };
     $scope.delete = function (target) {
